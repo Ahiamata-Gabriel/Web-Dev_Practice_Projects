@@ -1,0 +1,7 @@
+{
+    "icons": [
+      { "src": "imgs/favicons/andriod-192.png", "type": "image/png", "sizes": "192x192" },
+      { "src": "imgs/favicons/andriod-512.png", "type": "image/png", "sizes": "512x512" }
+    ]
+  }
+  

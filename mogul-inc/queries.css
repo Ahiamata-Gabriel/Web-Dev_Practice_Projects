@@ -1,0 +1,270 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .pricing {
+    max-width: 120rem;
+  }
+
+  .brands {
+    max-width: 134.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 955px (Tablets) */
+/**************************/
+@media (max-width: 59.7em) {
+  html {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .hero-img {
+    width: 65%;
+  }
+
+  .hero-text-box {
+    padding: 0 7rem;
+    /* order: 2; */
+  }
+
+  /* .hero-img-box {
+    order: 1;
+  } */
+
+  .scd-text {
+    padding: 0 2rem;
+    text-align: justify;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2.1rem 3.8rem;
+    font-size: 2.5rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .list-item:link,
+  .list-item:visited {
+    color: #fff;
+    padding: 1.5rem 3rem;
+  }
+
+  .last-btn:hover,
+  .last-btn:active,
+  .btn:hover,
+  .btn:active {
+    background-color: #ffffff;
+    color: #361134;
+    box-shadow: inset 0 0 0 3px #361134;
+  }
+
+  .last-btn:link,
+  .last-btn:visited {
+    padding: 1.5rem 3rem;
+    /* font-size: 4rem; */
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(92, 91, 91, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-circle-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="grid-outline"] {
+    display: none;
+  }
+
+  .list-items {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .list-item:link,
+  .list-item:visited {
+    font-size: 3rem;
+  }
+
+  .last-btn:link,
+  .last-btn:visited {
+    font-size: 3rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .copyright {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+  }
+}
+
+/**************************/
+/* BELOW 844px ( Tablets) */
+/**************************/
+@media (max-width: 53em) {
+  html {
+    font-size: 44%;
+  }
+}
+
+/**************************/
+/* BELOW 744px ( SmallTablets) */
+/**************************/
+@media (max-width: 47em) {
+  html {
+    font-size: 41%;
+  }
+}
+
+/**************************/
+/* BELOW 700px ( SmallTablets) */
+/**************************/
+@media (max-width: 44em) {
+  .prm-text {
+    font-size: 5rem;
+  }
+
+  .pricing {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  /* ///////////////////////////// */
+}
+
+/*************************************/
+/* BETWEEN 445PX AND 543PX(phones) */
+/************************************/
+@media (min-width: 28em) and (max-width: 34em) {
+  .pricing-content {
+    padding: 6rem 2.8rem 2.8rem 2.8rem;
+  }
+
+  .pricing-text {
+    font-size: 3.2rem;
+  }
+
+  .pricing-list {
+    font-size: 2.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (phones) */
+/**************************/
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .pricing {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box {
+    padding: 0;
+  }
+
+  .brands-header {
+    font-size: 1.2rem;
+  }
+  .brand-logo {
+    height: 2rem;
+  }
+
+  .about-header-box {
+    justify-self: center;
+    grid-column: 1/4;
+  }
+
+  .about-content-box {
+    grid-column: 1/4;
+    border-left: none;
+    padding: 0 0 1rem;
+    border-bottom: 4px solid #361134;
+  }
+}
+
+/* **************************
+/* Fixing Safari flexbox gap */
+/************************** */
+.no-flexbox-gap .list-items li:not(:last-child) {
+  margin-right: 4.5rem;
+}
+
+/* .no-flexbox-gap .footer-logos-box div,
+ul {
+  margin-bottom: 4rem;
+} */
+
+.no-flexbox-gap .footer-social-media li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.no-flexbox-gap .info-section-links li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.no-flexbox-gap .brand-names li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
